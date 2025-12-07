@@ -101,7 +101,6 @@ pso-concreto/
 │
 ├── requirements.txt
 ├── README.md
-└── LICENSE (opcional)
 ```
 
 ## Considerações Finais
