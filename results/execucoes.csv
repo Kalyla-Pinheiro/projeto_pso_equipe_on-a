@@ -1,0 +1,12 @@
+# Tabela com uma linha por execução do PSO
+scores = resultados["all_scores"]
+times = resultados["all_times"]
+
+df_execucoes = pd.DataFrame({
+    "run": np.arange(1, len(scores) + 1),
+    "best_J": scores,
+    "time_s": times,
+})
+
+df_execucoes.to_csv("results/execucoes.csv", index=False)
+df_execucoes
