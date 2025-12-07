@@ -1,0 +1,23 @@
+best_run = resultados["best_run"]
+best_pos = best_run["best_position"]
+
+# Dicionário com a composição ótima
+melhor_comp = {name: float(val) for name, val in zip(COMPONENT_COLS, best_pos)}
+
+total_componentes = float(np.sum(best_pos))
+resistencia_prevista = float(
+    predictor.predict(**dict(zip(COMPONENT_COLS, best_pos)))
+)
+J_best = float(best_run["best_score"])
+
+melhor_comp_dict = {
+    "componentes": melhor_comp,
+    "total_componentes": total_componentes,
+    "resistencia_prevista_MPa": resistencia_prevista,
+    "J_best": J_best,
+}
+
+with open("results/melhor_composicao.json", "w", encoding="utf-8") as f:
+    json.dump(melhor_comp_dict, f, indent=4, ensure_ascii=False)
+
+melhor_comp_dict
