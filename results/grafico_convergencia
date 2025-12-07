@@ -1,0 +1,11 @@
+best_history = resultados["best_run"]["history"]
+
+plt.figure()
+plt.plot(best_history, marker="o")
+plt.xlabel("Iteração")
+plt.ylabel("Melhor J(x)")
+plt.title("Convergência do PSO – melhor execução")
+plt.grid(True)
+
+plt.savefig("results/grafico_convergencia_melhor_execucao.png", dpi=300, bbox_inches="tight")
+plt.show()
