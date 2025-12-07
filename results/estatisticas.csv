@@ -1,0 +1,5 @@
+stats = resultados["stats"]
+
+df_stats = pd.DataFrame([stats])
+df_stats.to_csv("results/estatisticas.csv", index=False)
+df_stats
