@@ -57,7 +57,7 @@ Conforme solicitado no enunciado do projeto:
 
 - Clone o repositório:
 ```bash
-git clone <https://github.com/Kalyla-Pinheiro/projeto_pso_equipe_on-a>
+git clone <https://github.com/Kalyla-Pinheiro/projeto_pso_equipe_on-a.git>
 cd pso-concreto
 ```
 
