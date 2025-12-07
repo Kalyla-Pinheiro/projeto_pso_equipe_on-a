@@ -105,7 +105,12 @@ pso-concreto/
 
 ## Considerações Finais
 
-Ao realizar o projeto notou-se que o uso do Algoritmo de Enxame de Partículas (PSO) mostrou-se que é bom para problema proposto, possibilitando a obtenção de composições de concreto com maior resistência prevista.
+Neste projeto, foi aplicado o algoritmo de Otimização por Enxame de Partículas (PSO) para maximizar a resistência à compressão do concreto aos 28 dias, utilizando um modelo Random Forest pré-treinado como função avaliadora. A função objetivo J(x), com penalização baseada na soma dos componentes em relação ao valor médio 𝑀, garantiu que as soluções permanecessem fisicamente plausíveis.
+
+Os resultados das cinco execuções do PSO apresentaram boa estabilidade e baixo desvio, indicando o bom funcionamento do método. As curvas de convergência mostraram rápida evolução nas primeiras iterações e posterior estabilização. A composição ótima encontrada apresentou alta resistência prevista e coerência com práticas usuais de dosagem de concreto.
+
+Como limitações, destaca-se a dependência do modelo preditivo e a ausência de validação experimental.
+
 
 ## Referências
 
